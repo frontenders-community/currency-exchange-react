@@ -1,0 +1,51 @@
+.converter-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+select {
+  width: 250px;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: inherit;
+  border-color: #545659;
+  border-radius: 6px;
+}
+
+select:focus,
+select:active {
+  outline: none;
+}
+
+input {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  background-color: transparent;
+  color: #545659;
+  border: 0;
+  border-bottom: 1px solid #545659;
+  transition: .5s;
+}
+
+input:focus,
+input:active {
+  color: var(--white);
+  outline: none;
+  border-bottom: 1px solid var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  select {
+    margin: 20px 0;
+  }
+}

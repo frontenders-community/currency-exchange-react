@@ -1,0 +1,38 @@
+.area {
+  padding: 2rem;
+}
+.header {
+  grid-area: header;
+}
+.header h3 {
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+.header h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.chart {
+  grid-area: chart;
+  background-color: var(--black);
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+}
+.converter-from {
+  grid-area: converter-from;
+  background-color: var(--grey-light);
+  border-bottom-left-radius: var(--border-radius);
+}
+.converter-to {
+  grid-area: converter-to;
+  background-color: var(--grey-dark);
+  border-bottom-right-radius: var(--border-radius);
+}
+@media screen and (max-width: 768px) {
+  .converter-from {
+    border-bottom-left-radius: 0;
+  }
+  .converter-to {
+    border-bottom-right-radius: 0;
+  }
+}
